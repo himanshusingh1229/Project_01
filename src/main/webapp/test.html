@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Write Your Summary</title>
+    <style>
+        :root {
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #f3f6fb;
+        }
+
+        body {
+            max-width: 680px;
+            margin: 48px auto;
+            padding: 0 20px;
+        }
+
+        main {
+            padding: 32px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgb(31 41 55 / 8%);
+        }
+
+        h1 {
+            color: #174ea6;
+        }
+
+        label {
+            display: block;
+            margin: 18px 0 6px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aab4c3;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 11px 20px;
+            color: #fff;
+            background: #174ea6;
+            border: 0;
+            border-radius: 6px;
+            font: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover, button:focus {
+            background: #103b80;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Summarize Java OOP</h1>
+    <p>Review <a href="about.html">the concept page</a>, then explain it in
+        your own words.</p>
+
+    <form action="verify.jsp" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+
+        <label for="email">Email ID (use a Gmail address)</label>
+        <input id="email" name="email" type="email" required
+               autocomplete="email">
+
+        <label for="summary">Your summary</label>
+        <textarea id="summary" name="summary" required></textarea>
+
+        <button type="submit">Submit summary</button>
+    </form>
+</main>
+</body>
+</html>
